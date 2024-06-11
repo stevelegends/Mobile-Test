@@ -1,4 +1,6 @@
 import React, { Component, ErrorInfo, ReactNode } from "react"
+
+// components
 import { ErrorDetails } from "./ErrorDetails"
 
 interface Props {
@@ -16,8 +18,6 @@ interface State {
  * app. It follows the "error boundary" pattern in React. We're using a
  * class component because according to the documentation, only class
  * components can be error boundaries.
- * @see [Documentation and Examples]{@link https://docs.infinite.red/ignite-cli/concept/Error-Boundary/}
- * @see [React Error Boundaries]{@link https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary}
  * @param {Props} props - The props for the `ErrorBoundary` component.
  * @returns {JSX.Element} The rendered `ErrorBoundary` component.
  */

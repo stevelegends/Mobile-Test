@@ -1,4 +1,7 @@
+// modules
 import i18n from "i18n-js"
+
+// i18n
 import { TxKeyPath } from "./i18n"
 
 /**
