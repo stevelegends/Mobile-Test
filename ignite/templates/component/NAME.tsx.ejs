@@ -1,6 +1,6 @@
 ---
 patch:
-  path: "app/components/index.ts"
+  path: "app/components/index.tsx"
   append: "export * from \"./<%= props.subdirectory %><%= props.pascalCaseName %>\"\n"
   skip: <%= props.skipIndexFile %>
 ---

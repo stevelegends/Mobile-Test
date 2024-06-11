@@ -8,7 +8,7 @@ patches:
     after: "types.model(\"RootStore\").props({\n"
     insert: "  <%= props.camelCaseName %>: types.optional(<%= props.pascalCaseName %>Model, {} as any),\n"
     skip: <%= !props.pascalCaseName.endsWith('Store') %>
-  - path: "app/models/index.ts"
+  - path: "app/models/index.tsx"
     append: "export * from \"./<%= props.pascalCaseName %>\"\n" 
     skip: <%= props.skipIndexFile %>
 ---

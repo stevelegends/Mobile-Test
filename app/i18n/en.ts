@@ -3,6 +3,8 @@ const en = {
     ok: "OK!",
     cancel: "Cancel",
     back: "Back",
+    loading: "Loading",
+    done: "Done!"
   },
   errorScreen: {
     title: "Something went wrong!",
@@ -17,6 +19,7 @@ const en = {
       button: "Let's try this again",
     },
   },
+  pageNumber: `Page {{number}}`
 }
 
 export default en

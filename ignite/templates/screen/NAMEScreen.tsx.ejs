@@ -1,6 +1,6 @@
 ---
 patches:
-- path: "app/screens/index.ts"
+- path: "app/screens/index.tsx"
   append: "export * from \"./<%= props.pascalCaseName %>Screen\"\n"
   skip: <%= props.skipIndexFile %>
 - path: "app/navigators/AppNavigator.tsx"

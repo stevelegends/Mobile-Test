@@ -1,7 +1,7 @@
 import React from "react"
 
 // modules
-import {createBottomTabNavigator} from "@react-navigation/bottom-tabs";
+import {BottomTabScreenProps, createBottomTabNavigator} from "@react-navigation/bottom-tabs";
 
 // screens
 import * as Screen from "app/screens"
@@ -10,7 +10,13 @@ import * as Screen from "app/screens"
 import {AppStackScreenProps} from "app/navigators/AppNavigator";
 import {spacing} from "app/theme";
 
-const BottomTab = createBottomTabNavigator();
+export type TabParamList = {
+    test1: undefined;
+    test2: undefined;
+};
+export type TabScreenProps<T extends keyof TabParamList> = BottomTabScreenProps<TabParamList, T>;
+
+const BottomTab = createBottomTabNavigator<TabParamList>();
 
 interface Props extends AppStackScreenProps<"Tab"> {}
 
