@@ -21,6 +21,13 @@ import Config from "app/config"
 // theme
 import { colors } from "app/theme"
 
+// hooks
+import {useNetInfo} from "app/hooks/useNetInfo";
+
+// store
+import {useAppDispatch} from "app/store/store";
+import {syncNoteDataAction} from "app/store/notes/saga";
+
 export type AppStackParamList = {
     Tab: undefined
   // 🔥 Your screens go here
@@ -59,8 +66,14 @@ export interface NavigationProps
 
 export const AppNavigator = () => {
   const colorScheme = useColorScheme()
+  const dispatch = useAppDispatch()
 
   useBackButtonHandler((routeName) => exitRoutes.includes(routeName))
+  useNetInfo((isConnected) => {
+      if(isConnected) {
+          dispatch(syncNoteDataAction())
+      }
+  })
 
   return (
       <NavigationContainer

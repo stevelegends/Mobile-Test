@@ -6,7 +6,7 @@ if (__DEV__) {
   require("./devtools/ReactotronConfig.ts")
 }
 
-// import default
+import "react-native-get-random-values"
 import "./i18n"
 import "./utils/ignoreWarnings"
 

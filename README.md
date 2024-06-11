@@ -1,8 +1,8 @@
-# Welcome to your new ignited app!
+## ENV
+`nvm: nvm alias default v21.5.0` (there is a connection issue dev client with node version: v20.2.0`)
 
-[![CircleCI](https://circleci.com/gh/infinitered/ignite.svg?style=svg)](https://circleci.com/gh/infinitered/ignite)
+`rvm: ruby-3.0.`
 
-## The latest and greatest boilerplate for Infinite Red opinions
 
 This is the boilerplate that [Infinite Red](https://infinite.red) uses as a way to test bleeding-edge changes to our React Native stack.
 
@@ -156,7 +156,3 @@ This directory will hold your Jest configs and mocks.
 ## Running Maestro end-to-end tests
 
 Follow our [Maestro Setup](https://ignitecookbook.com/docs/recipes/MaestroSetup) recipe from the [Ignite Cookbook](https://ignitecookbook.com/)!
-
-## ENV
-`nvm: v20.2.0`
-`rvm: ruby-3.0.`

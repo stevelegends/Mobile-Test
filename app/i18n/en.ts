@@ -4,7 +4,8 @@ const en = {
     cancel: "Cancel",
     back: "Back",
     loading: "Loading",
-    done: "Done!"
+    done: "Done!",
+    add: "Add"
   },
   errorScreen: {
     title: "Something went wrong!",
@@ -19,7 +20,11 @@ const en = {
       button: "Let's try this again",
     },
   },
-  pageNumber: `Page {{number}}`
+  pageNumber: `Page {{number}}`,
+  alert: {
+    titleIsRequired: "Title is required",
+    descriptionIsRequired: "Description is required",
+  }
 }
 
 export default en

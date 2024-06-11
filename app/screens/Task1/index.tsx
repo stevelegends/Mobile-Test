@@ -12,7 +12,7 @@ import {TabScreenProps} from "app/navigators";
 import {InfiniteListView} from "./InfiniteListView"
 import {HeaderRightView} from "./HeaderRightView";
 
-export const Test1 = ({navigation}: TabScreenProps<"test1">) => {
+export const Task1 = ({navigation}: TabScreenProps<"task1">) => {
 
     useEffect(() => {
         navigation.setOptions({

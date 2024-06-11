@@ -1,4 +1,4 @@
 export * from "./ErrorScreen/ErrorBoundary"
-export * from "./Test1"
-export * from "./Test2"
+export * from "./Task1"
+export * from "./Task2"
 // export other screens here
